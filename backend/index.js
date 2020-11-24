@@ -9,10 +9,10 @@ app.use(express.static('public'))
 const port = process.env.PORT || 3001;
 dotenv.config();
 
-app.use(cors({
-  origin: [process.env.FRONTEND],
-  credentials: true,
-}));
+// app.use(cors({
+//   origin: [process.env.FRONTEND],
+//   credentials: true,
+// }));
 
 app.use(bodyParser.json());
 
